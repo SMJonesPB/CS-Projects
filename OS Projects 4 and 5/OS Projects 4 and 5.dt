@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DevTrackerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SolutionTotalEditTime="PT30M10.0538496S" SolutionTotalViewTime="PT56M41.8411011S" SolutionTotalDebugTime="PT0S">
+  <FileVersion>
+    <Major>1</Major>
+    <Minor>0</Minor>
+  </FileVersion>
+  <SolutionFolder>C:\Users\smjon\source\repos\OS Projects 4 and 5</SolutionFolder>
+  <SolutionCreattionDate>2019-05-15T19:24:40.1881371-04:00</SolutionCreattionDate>
+  <ProjectsCreatedDateList>
+    <ProjectCreated>
+      <ProjectName>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\OS Projects 4 and 5.csproj</ProjectName>
+      <CreatedDate>2019-05-15T19:24:25.4385418-04:00</CreatedDate>
+    </ProjectCreated>
+  </ProjectsCreatedDateList>
+  <SessionTimeList />
+  <LastSessionTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT4M10.7183666S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\Program.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\OS Projects 4 and 5.csproj</ProjectName>
+      <CreatedDate>2019-10-11T13:36:45.720284-04:00</CreatedDate>
+      <ViewedBy>smjon</ViewedBy>
+    </DevTrackerDataItem>
+  </LastSessionTimeList>
+  <TotalTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT56M41.8420988S" EditActiveTime="PT30M10.0538496S">
+      <ModifiedDate>2019-06-15T20:54:38.0755721-04:00</ModifiedDate>
+      <ModifiedBy>smjon</ModifiedBy>
+      <EditedCount>4</EditedCount>
+      <ViewedCount>7</ViewedCount>
+      <Item>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\Program.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\OS Projects 4 and 5.csproj</ProjectName>
+      <CreatedDate>2019-05-15T19:24:41.3849353-04:00</CreatedDate>
+      <ViewedBy>smjon</ViewedBy>
+    </DevTrackerDataItem>
+  </TotalTimeList>
+  <HistoryTimeList>
+    <DevTrackerDataItem ViewActiveTime="PT4M10.7143395S" EditActiveTime="PT0S">
+      <ModifiedDate>0001-01-01T00:00:00</ModifiedDate>
+      <EditedCount>0</EditedCount>
+      <ViewedCount>1</ViewedCount>
+      <Item>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\Program.cs</Item>
+      <ItemType>ProjectItem</ItemType>
+      <ProjectName>C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\OS Projects 4 and 5.csproj</ProjectName>
+      <CreatedDate>2019-10-11T13:36:45.720284-04:00</CreatedDate>
+      <ViewedBy>smjon</ViewedBy>
+    </DevTrackerDataItem>
+  </HistoryTimeList>
+</DevTrackerData>

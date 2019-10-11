@@ -1,0 +1,11 @@
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\bin\Debug\netcoreapp2.2\OS Projects 4 and 5.deps.json
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\bin\Debug\netcoreapp2.2\OS Projects 4 and 5.runtimeconfig.json
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\bin\Debug\netcoreapp2.2\OS Projects 4 and 5.runtimeconfig.dev.json
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\bin\Debug\netcoreapp2.2\OS Projects 4 and 5.dll
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\bin\Debug\netcoreapp2.2\OS Projects 4 and 5.pdb
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.csprojAssemblyReference.cache
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.csproj.CoreCompileInputs.cache
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.AssemblyInfoInputs.cache
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.AssemblyInfo.cs
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.dll
+C:\Users\smjon\source\repos\OS Projects 4 and 5\OS Projects 4 and 5\obj\Debug\netcoreapp2.2\OS Projects 4 and 5.pdb
