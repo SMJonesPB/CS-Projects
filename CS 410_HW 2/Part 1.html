@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script>
+            function sum(){
+                employee = document.getElementById("employee");
+                hours = parseInt(document.getElementById("hours").value);
+                salary = 0;
+                if(employee.value == "1"){
+                    salary += 35 * hours;
+                }
+
+                if(employee.value == "2"){
+                    salary += 50 * hours;
+                }
+
+                if(employee.value == "3"){
+                    salary += 65 * hours;
+                }
+
+                document.getElementById("output").value = salary;
+            }
+        </script>
+    </head>
+    <body>
+        <label for = "employeetype">Employee</label>
+        <input type = "text" name = "input1" id = "employee"/>
+        <br><br>
+        <label for = "h">Hours</label>
+        <input type = "text" name = "input2" id = "hours"/>
+        <br><br>
+        <label for = "salary">Salary</label>
+        <input type = "text" name = "output" id = "output" readonly/>
+        <br><br>
+        <input type = "button" onclick = "sum()" value = "Compute salary"/>
+    </body>
+</html>

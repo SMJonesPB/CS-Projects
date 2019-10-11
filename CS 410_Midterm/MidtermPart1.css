@@ -1,0 +1,82 @@
+a:hover{
+    color: #00B0FF;
+    background-color: #F50057;
+}
+
+footer{
+    background-color: #1A237E;
+}
+
+nav li{
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-indent: 20px;
+    background-color: #3F51B5;
+}
+
+nav a{
+    color: lightblue;
+}
+
+h1{
+    color: white;
+    background-color: #1A237E;
+}
+head, body{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: #E8EAF6;
+}
+
+head{
+    border-collapse: collapse;
+    border: 1px solid #C5CAE9;;
+    color: white;
+    background-color: #1A237E;
+}
+
+header{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #C5CAE9;;
+}
+
+footer, main, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img{
+    font-family: serif;
+} 
+
+figure figcaption{
+    color: black;
+    background-color: #C5CAE9;
+}
+
+h2, h3{
+    color: white;
+    background-color: #7986CB;
+}
+
+time{
+    color: #FF80AB;
+}
+
+main{
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+nav, #related, #reviews{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: lightblue;
+}
