@@ -4,7 +4,6 @@ import java.util.*;
 
 public class Page {
 	
-
 	List<Integer> pt1 = new ArrayList<Integer>();
 	List<Integer> pt2 = new ArrayList<Integer>();
 	int[] address = {0, 1, 1, 0, 0, 1, 1, 1};
