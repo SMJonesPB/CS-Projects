@@ -1,8 +1,11 @@
 ﻿using System;
 
-namespace OS_Projects_4_and_5{
-    class Program{
-        static void Main(string[] args){
+namespace OSProjects4and5
+{
+    public class Program
+    {
+        private static void Main(string[] args)
+        {
             Philosopher philosopher = new Philosopher();
             philosopher.run();
             Page page = new Page();
@@ -10,29 +13,36 @@ namespace OS_Projects_4_and_5{
         }
     }
 
-    class Philosopher{
-        public String[] stateArray = new String[5];
-        public String thinking = "thinking";
-        public String eating = "eating";
-        public int count = 0;
+    public class Philosopher
+    {
+        private string[] stateArray = new string[5];
+        private string thinking = "thinking";
+        private string eating = "eating";
+        private int count = 0;
 
-        public void run(){
-            while (count < 500){
-                for (int i = 0; i < stateArray.Length; i++){
+        public void run()
+        {
+            while (count < 500)
+            {
+                for (int i = 0; i < stateArray.Length; i++)
+                {
                     Random random = new Random();
                     int rng = random.Next(2);
-                    if (rng == 0){
+                    if (rng == 0)
+                    {
                         stateArray[i] = thinking;
                         Console.WriteLine("Philosopher " + i + " is " + stateArray[i] + ".");
                     }
-
-                    else{
-                        if (stateArray[(i + 1) % 5] != eating && stateArray[(i + 4) % 5] != eating){
+                    else
+                    {
+                        if (stateArray[(i + 1) % 5] != eating && stateArray[(i + 4) % 5] != eating)
+                        {
                             stateArray[i] = eating;
                             Console.WriteLine("Philosopher " + i + " is " + stateArray[i] + ".");
                             count++;
                             Console.WriteLine("The philosophers have eaten " + count + " time(s).");
-                            if (count == 500){
+                            if (count == 500)
+                            {
                                 break;
                             }
                         }
@@ -42,14 +52,16 @@ namespace OS_Projects_4_and_5{
         }
     }
 
-    class Page{
-        int[] pt1 = new int[5];
-        int[] pt2 = new int[5];
-        int[] address = { 0, 1, 1, 0, 0, 1, 1, 1 };
-        double pageNum = 0;
-        double offset = 0;
+    public class Page
+    {
+        private int[] pt1 = new int[5];
+        private int[] pt2 = new int[5];
+        private int[] address = { 0, 1, 1, 0, 0, 1, 1, 1 };
+        private double pageNum = 0;
+        private double offset = 0;
 
-        public void run(){
+        public void run()
+        {
             Console.WriteLine("\n\npt1");
             int memoryFrames1 = 5;
             pt1[0] = memoryFrames1;
@@ -64,7 +76,8 @@ namespace OS_Projects_4_and_5{
             int processFrames1 = 10;
             pt1[4] = processFrames1;
             Console.WriteLine("[" + string.Join(", ", pt1) + "]");
-            while (numProcesses1 > 0 && processFrames1 > 0){
+            while (numProcesses1 > 0 && processFrames1 > 0)
+            {
                 processFrames1--;
                 pt1[4] = processFrames1;
                 memoryFrames1++;
@@ -73,7 +86,8 @@ namespace OS_Projects_4_and_5{
                 pt1[1] = numProcesses1;
                 pt1[2] = numProcesses1 * 2;
                 Console.WriteLine("[" + string.Join(", ", pt1) + "]");
-                if (processFrames1 == 0){
+                if (processFrames1 == 0)
+                {
                     Console.WriteLine("\nProcess " + numProcesses1 + " doesn't have a frame.");
                 }
             }
@@ -93,7 +107,8 @@ namespace OS_Projects_4_and_5{
             int processFrames2 = 3;
             pt2[4] = processFrames2;
             Console.WriteLine("[" + string.Join(", ", pt2) + "]");
-            while (numProcesses2 > 0 && processFrames2 > 0){
+            while (numProcesses2 > 0 && processFrames2 > 0)
+            {
                 processFrames2--;
                 pt2[4] = processFrames2;
                 memoryFrames2++;
@@ -102,12 +117,14 @@ namespace OS_Projects_4_and_5{
                 pt2[1] = numProcesses2;
                 pt2[2] = numProcesses2;
                 Console.WriteLine("[" + string.Join(", ", pt2) + "]");
-                if (processFrames2 == 0){
+                if (processFrames2 == 0)
+                {
                     Console.WriteLine("\nProcess " + numProcesses2 + " doesn't have a frame.");
                 }
             }
 
-            for (int i = 0; i < 4; i++){
+            for (int i = 0; i < 4; i++)
+            {
                 pageNum += address[i] * Math.Pow(2, i);
                 offset += address[address.Length - i - 1] * Math.Pow(2, i);
             }

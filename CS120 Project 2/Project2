@@ -3,7 +3,7 @@
 #2/27/17
 
 def collage():
-  setMediaPath(r"C:\Users\smjon\Documents\CS120Project2")
+  setMediaPath(r"C:\Users\smjon\Documents\CS-Projects\CS120 Project 2")
   pic1 = makePicture("Arc logo resized 1.jpg")
   #explore(pic1)
   pic1_2 = makePicture("Arc logo resized 2.jpg")

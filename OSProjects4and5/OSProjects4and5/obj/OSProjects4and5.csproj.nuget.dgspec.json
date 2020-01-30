@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\smjon\\Documents\\CS-Projects\\OSProjects4and5\\OSProjects4and5.csproj": {}
+    "C:\\Users\\smjon\\source\\repos\\OSProjects4and5\\OSProjects4and5\\OSProjects4and5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\smjon\\Documents\\CS-Projects\\OSProjects4and5\\OSProjects4and5.csproj": {
+    "C:\\Users\\smjon\\source\\repos\\OSProjects4and5\\OSProjects4and5\\OSProjects4and5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\smjon\\Documents\\CS-Projects\\OSProjects4and5\\OSProjects4and5.csproj",
+        "projectUniqueName": "C:\\Users\\smjon\\source\\repos\\OSProjects4and5\\OSProjects4and5\\OSProjects4and5.csproj",
         "projectName": "OSProjects4and5",
-        "projectPath": "C:\\Users\\smjon\\Documents\\CS-Projects\\OSProjects4and5\\OSProjects4and5.csproj",
+        "projectPath": "C:\\Users\\smjon\\source\\repos\\OSProjects4and5\\OSProjects4and5\\OSProjects4and5.csproj",
         "packagesPath": "C:\\Users\\smjon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\smjon\\Documents\\CS-Projects\\OSProjects4and5\\obj\\",
+        "outputPath": "C:\\Users\\smjon\\source\\repos\\OSProjects4and5\\OSProjects4and5\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\smjon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\smjon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
