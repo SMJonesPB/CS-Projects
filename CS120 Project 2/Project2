@@ -122,3 +122,5 @@ def rotate(sourcePic,targetPic,startX,startY):
       setColor(targetP, sourceColor)
       targetY += 1
     targetX += 1
+    
+collage()
