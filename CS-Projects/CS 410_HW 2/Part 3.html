@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <script>
+            function RentCar(){
+                car = document.getElementById("car");
+                days = parseInt(document.getElementById("days").value);
+                insurance = document.getElementById("insurance");
+                cost = 0;
+                if(car.value == "0"){
+                    if(insurance.checked){
+                        cost += 30 * days + 15 * days;
+                    }
+
+                    else{
+                        cost += 30 * days;
+                    }
+                }
+
+                else if(car.value == "1"){
+                    if(insurance.checked){
+                        cost += 40 * days + 15 * days;
+                    }
+
+                    else{
+                        cost += 40 * days;
+                    }
+                }
+
+                else if(car.value == "2"){
+                    if(insurance.checked){
+                        cost += 50 * days + 15 * days;
+                    }
+
+                    else{
+                        cost += 50 * days;
+                    }
+                }
+
+                document.getElementById("output").value = cost;
+            }
+        </script>
+    </head>
+    <body>
+        <select name = "car" id = "car">
+            <option value = "0">Compact</option>
+            <option value = "1">Intermediate</option>
+            <option value = "2">Standard</option>
+        </select>
+        <br><br>
+        <label for = "d">Days</label>
+        <input type = "text" name = "days" id = "days"/>
+        <br><br>
+        <input type = "radio" name = "insurance" id = "insurance" value = "0">Insurance</input>
+        <br>
+        <input type = "radio" name = "insurance" id = "no" value = "1">No insurance</input>
+        <br><br>
+        <label for = "Cost">Cost</label>
+       <input type = "text" name = "output" id = "output" readonly/>
+       <br><br>
+       <input type = "button" onclick = "RentCar()" value = "Rent car"/>
+    </body>
+</html>

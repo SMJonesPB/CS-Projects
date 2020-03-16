@@ -1,0 +1,126 @@
+#Sean Jones
+#Arc Tribute
+#2/27/17
+
+def collage():
+  setMediaPath(r"C:\Users\smjon\Documents\CS-Projects\CS120 Project 2")
+  pic1 = makePicture("Arc logo resized 1.jpg")
+  #explore(pic1)
+  pic1_2 = makePicture("Arc logo resized 2.jpg")
+  #explore(pic1_2)
+  pic2 = makePicture("Arc logo resized 3.jpg")
+  makeGray(pic2)
+  #show(pic2)
+  pic3 = makePicture("Arc logo resized 1.jpg")
+  negative(pic3)
+  #show(pic3)
+  pic4 = makePicture("Arc logo resized 2.jpg")
+  makeCyan(pic4)
+  #show(pic4)
+  pic5 = makePicture("Arc logo resized 2.jpg")
+  makeColorful(pic5)
+  #explore(pic5)
+  signature = makePicture("signature.jpg")  
+  #explore(signature)
+  canvas = makeEmptyPicture(700, 515, white)
+  copy(pic1, canvas, 0, 0)
+  rotate(pic2, canvas, 0, 223)
+  copy(pic3, canvas, 467, 0)
+  copy(pic4, canvas, 0, 257)
+  copy(pic5, canvas, 350, 257)
+  copy(signature, canvas, 600, 0)
+  show(canvas)
+
+def makeGray(pic2):
+  for p in getPixels(pic2):
+    redColor = getRed(p)
+    greenColor = getGreen(p)
+    blueColor = getBlue(p)
+    greyColor = (redColor + greenColor + blueColor) / 3
+    grey = makeColor(greyColor, greyColor, greyColor)
+    setColor(p, grey)
+
+def negative(pic3):
+  for p in getPixels(pic3):
+    redColor = getRed(p)
+    greenColor = getGreen(p)
+    blueColor = getBlue(p)
+    negColor = makeColor(255 - redColor, 255 - greenColor, 255 - blueColor)
+    setColor(p, negColor)
+
+def makeCyan(pic4):
+  for p in getPixels(pic4):
+    setRed(p, getRed(p) * 0)
+    setGreen(p, getGreen(p) * 1.5)
+    setBlue(p, getBlue(p) * 2)
+
+def makeColorful(pic5):
+  #step 1- make the top red
+  grayColor = makeColor(200, 200, 200)
+  darkGrayColor = makeColor(142, 141, 142)
+  lightOrange = makeColor(196, 150, 73)
+  letterColor = makeColor(209, 209, 207)
+  for x in range(55, 145):
+    for y in range(31, 171):
+      p = getPixel(pic5, x, y)
+      if (distance(getColor(p), grayColor) <= 120):
+        setColor(p, red)
+  
+  #step 2- make the bottom green
+  for x in range(59, 159):
+    for y in range(141, 224):
+      p = getPixel(pic5, x, y)
+      if (distance(getColor(p), darkGrayColor) <= 90):
+        setColor(p, green)
+  
+  #step 3- make the right blue
+  for x in range(101, 162):
+    for y in range(64, 171):
+      p = getPixel(pic5, x, y)
+      if (distance(getColor(p), orange) <= 200):
+        setColor(p, blue)
+  
+  #step 4- make the letters orange
+  for x in range(176, 287):
+    for y in range(113, 170):
+      p = getPixel(pic5, x, y)
+      if (distance(getColor(p), letterColor) <= 200):
+        setColor(p, orange)
+
+def copySignature(sourcePic,targetPic,startX,startY):
+#step 1- copy the signature to the top right cornor, the background blends in
+  signature = makePicture("signature.jpg")  
+  for p in getPixels(signature):
+    x = getX(p)
+    y = getY(p)
+    if (distance(getColor(p), white) <= 40):
+      bgP = getPixel(targetPic, x, y) 
+      bgColor = getColor(bgP)
+      setColor(p, bgColor)
+  
+def copy(sourcePic,targetPic,startX,startY):
+  #step 2- copy the pictures
+  targetX = startX
+  for sourceX in range(0, getWidth(sourcePic)):
+    targetY = startY
+    for sourceY in range(0, getHeight(sourcePic)):
+      sourceP = getPixel(sourcePic, sourceX, sourceY)
+      sourceColor = getColor(sourceP)
+      targetP = getPixel(targetPic, targetX, targetY)
+      setColor(targetP, sourceColor)
+      targetY += 1
+    targetX += 1
+    
+def rotate(sourcePic,targetPic,startX,startY):
+  targetX = startX
+  for sourceX in range(0, getWidth(sourcePic)):
+    targetY = startY
+    for sourceY in range(0, getHeight(sourcePic)):
+      sourceP = getPixel(sourcePic, sourceX, sourceY)
+      sourceColor = getColor(sourceP)
+      targetP = getPixel(targetPic, targetY, targetX)
+      setColor(targetP, sourceColor)
+      targetY += 1
+    targetX += 1
+    
+collage()
